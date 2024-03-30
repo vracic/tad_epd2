@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html" id="crest"><img width="40" height="40" src="../img/Zagreb.jpg" alt="Crest of Zagreb"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./history.html">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./city_districts.html">City districts</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Culture
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./tourism.html">Tourism</a></li>
+                      <li><a class="dropdown-item" href="./recreation_and_sports.html">Recreation and sports</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./review.html">Review</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    <header>
+        <h1>Zagreb</h1>
+        <h3>City districts</h3>
+    </header>
+    <br>
+    <br>
+    
+    <p>
+        Zagreb is by far the largest city in Croatia in terms of population, which was 767,131 in 2021. 
+        Zagreb metropolitan area population is slightly above 1.0 million inhabitants, as it includes the Zagreb County. 
+        Zagreb metropolitan area makes approximately a quarter of a total population of Croatia. 
+        In 1997, the City of Zagreb itself was given special County status, separating it from Zagreb County. 
+        The majority of its citizens are Croats making up 93.53% of the city's population (2021 census). 
+        The same census records around 49,605 residents belonging to ethnic minorities: 12,035 Serbs (1.57%), 6,566 Bosniaks (0.86%), 3,475 Albanians (0.45%), 2,167 Romani (0.28%), 1,312 Slovenes (0.17%), 1,036 Macedonians (0.15%), 865 Montenegrins (0.11%), and a number of other smaller communities.
+    </p>
+
+    <p>
+        Since 14 December 1999 City of Zagreb is divided into 17 city districts.
+    </p>
+
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#dis_img">
+        City districts
+    </button>
+
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="dis_img">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">City districts</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../img/kvartovi.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

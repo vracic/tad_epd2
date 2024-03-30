@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(213, 223, 230);
+}
+
+header {
+    padding:16px;
+    background-color:rgb(20, 84, 126);
+    border: 1px solid black;
+    margin-bottom: -13px;
+    color: white;
+}
+
+h3 {
+    padding-left: 16px;
+}
+
+nav {
+    padding:16px !important;
+    border: 1px solid black;
+}
+
+p {
+    padding: 16px;
+}
+
+button {
+    margin-left: 16px;
+}
+
+form {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#crest {
+    size: 15px;
+}
+
+.form-group {
+    padding-bottom: 10px;
+}
+
+
+
+
+.rate{
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
